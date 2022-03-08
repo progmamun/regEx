@@ -24,3 +24,11 @@ const re2 = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/g;
 const re3 = /#?([\da-fA-F]{2})([\da-fA-F]{2})([\da-fA-F]{2})/g;
 
 'color: #ffffff; color: #000000;'.match(re);
+
+/// === Remove html tags ===///
+// the regex below to find and replace all HTML tags.
+
+const re4 =
+  /(<script(\s|\S)*?<\/script>)|(<style(\s|\S)*?<\/style>)|(<!--(\s|\S)*?-->)|(<\/?(\s|\S)*?>)/g;
+
+const sanitized = '<h1>Hello World</h1>'.replace(re, '');
