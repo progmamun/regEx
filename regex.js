@@ -17,3 +17,10 @@ const next = 'aBC'.replace(/a/, 'A');
 const re2 = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/g;
 
 '1sMyPasswordOK?'.search(re);
+
+//// ==== Hex Codes === ///
+// find all of the hex codes, such as CSS colors, useful if you need to analyze the color scheme.
+
+const re3 = /#?([\da-fA-F]{2})([\da-fA-F]{2})([\da-fA-F]{2})/g;
+
+'color: #ffffff; color: #000000;'.match(re);
