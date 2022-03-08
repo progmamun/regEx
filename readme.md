@@ -15,3 +15,9 @@
 - `\w` NOT word `\D` NOT digit `\S` NOT whitespace
 - `\t` tabs, `\n` line breaks
 - `.` any character (except newline)
+
+## Brackets
+
+- `[xyz]` match any x, y, z
+- `[J-Z]` match any capital letters between J & Z.
+- `[^xyz]` NOT x, y, z
