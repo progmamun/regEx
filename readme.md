@@ -30,3 +30,9 @@
 - `z+` one or multiple occurrences
 - `z{n}` n occurrences
 - `z{min, max}` min/ max occurrences
+
+## Anchors
+
+- `hello world` exact match
+- `^hello` start of the strings
+- `world$` end of the string
